@@ -82,3 +82,6 @@ library
   include-dirs: cbits
 
   pkgconfig-depends: python-3.5
+  
+  if os(darwin)
+    cpp-options: -D__attribute__(A)= -D_Nullable= -D_Nonnull=
